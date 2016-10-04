@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- Begin: Those are added colors Popular Movies app -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_700">#646464</color>
+    <color name="black">#000000</color>
+
+    <color name ="blue">#0000FF</color>
+    <color name ="green">#008000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_white">#7FFFFFFF</color>
+    <color name="movie_title_green">#009688</color>
+    <color name="mark_as_favorite">#86E4DB</color>
+
+    <color name = "red">#FF0000</color>
+
+
+    <!--End Popular Movie app colors -->
+
+
+</resources>
