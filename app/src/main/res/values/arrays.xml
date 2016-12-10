@@ -10,4 +10,11 @@
     <item>@string/pref_sort_by_popular</item>
     <item>@string/pref_sort_by_top_rated</item>
 </string-array>
+
+
+    <array name="switches">
+        <item>@style/LightSwitch</item>
+        <item>@style/DarkSwitch</item>
+    </array>
+
 </resources>

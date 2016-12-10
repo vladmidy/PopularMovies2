@@ -13,12 +13,9 @@
 
     <string name="pref_favorite_key">favorite</string>
 
-    <string name="column" translatable="false">2</string>
-
-    <string name="action_share" translatable="false">Share</string>
+    <string name="column" translatable="false">3</string>
 
     <string name="scroll">Scroll to the bottom to see the ListView</string>
-
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus gravida auctor. Pellentesque auctor, erat in semper fringilla, ligula sem viverra dui, finibus maximus est purus et elit. Vivamus non leo nunc. Donec tincidunt nisi lectus, in bibendum nunc pulvinar sed. Cras non elementum urna. Cras facilisis arcu ac metus mollis tempus. Etiam sit amet dignissim risus, ut rutrum dui. Vivamus at sodales elit, condimentum efficitur odio.
 
 Praesent scelerisque massa et est facilisis, quis egestas erat auctor. Phasellus in tellus in urna suscipit aliquet. Pellentesque vulputate, dolor non facilisis porta, justo dui porta lorem, in efficitur libero orci ornare massa. In mollis sit amet turpis sed consectetur. Proin laoreet lacus quis justo mattis convallis. Nullam ut sapien eget diam viverra facilisis. Ut vehicula justo vel urna dapibus, at semper nisl dictum. Proin faucibus dictum tempor. Proin id consectetur erat. Cras convallis dui quis massa eleifend, rutrum sagittis eros pretium.

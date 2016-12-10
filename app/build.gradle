@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "com.ciscoedge.popularmovies"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -19,7 +19,7 @@ android {
     }
 
     buildTypes.each {
-            it.buildConfigField 'String', 'MOVIEDB_API_KEY', "\"7d4897e1fe081fb576686d5b1be6d0b7\""
+            it.buildConfigField 'String', 'MOVIEDB_API_KEY', API_KEY
     }
 }
 
@@ -33,4 +33,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+    compile 'net.steamcrafted:materialiconlib:1.1.1'
+    compile 'com.github.rey5137:material:1.2.4'
 }
+
+
+
+

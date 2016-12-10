@@ -6,7 +6,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-
+import android.preference.SwitchPreference;
 
 
 public class MovieAppSettingsActivity extends PreferenceActivity
@@ -19,7 +19,7 @@ public class MovieAppSettingsActivity extends PreferenceActivity
         addPreferencesFromResource(R.xml.pref_general);
 
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_sort_by_key)));
-
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_favorite_key)));
     }
 
 
@@ -27,12 +27,21 @@ public class MovieAppSettingsActivity extends PreferenceActivity
 
         preference.setOnPreferenceChangeListener(this);
 
-
-        onPreferenceChange(preference,
-                PreferenceManager
-                        .getDefaultSharedPreferences(preference.getContext())
-                        .getString(preference.getKey(), ""));
+        if (preference instanceof ListPreference) {
+            onPreferenceChange(preference,
+                    PreferenceManager
+                            .getDefaultSharedPreferences(preference.getContext())
+                            .getString(preference.getKey(), ""));
+        }else if (preference instanceof SwitchPreference)
+        {
+            // Trigger the listener immediately with the preference's
+            // current value.
+            onPreferenceChange(preference,
+                    PreferenceManager.getDefaultSharedPreferences(
+                            preference.getContext()).getBoolean(preference.getKey(),false));
+        }
     }
+
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object value) {
@@ -51,5 +60,4 @@ public class MovieAppSettingsActivity extends PreferenceActivity
         }
         return true;
     }
-
 }

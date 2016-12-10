@@ -2,16 +2,20 @@ package com.ciscoedge.popularmovies;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.ViewConfiguration;
 
+import com.ciscoedge.popularmovies.data.MovieDbHelper;
+
 import java.lang.reflect.Field;
 
-
 public class MovieMainActivity extends Activity {
+
+    SQLiteOpenHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class MovieMainActivity extends Activity {
         }
         //END: HACK
 
+        dbHelper = new MovieDbHelper(this);
 
     }
 
@@ -47,8 +52,8 @@ public class MovieMainActivity extends Activity {
 
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_list, menu);
-        return true;
 
+        return true;
     }
 
     @Override

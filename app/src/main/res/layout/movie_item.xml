@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants">
 
-<ImageView android:layout_width="185dp"
-    android:layout_height="185dp"
+<ImageView android:layout_width="@dimen/grid_image_item"
+    android:layout_height="@dimen/grid_image_item"
     android:scaleType="centerCrop"
     android:id="@+id/movie_image"
     xmlns:android="http://schemas.android.com/apk/res/android" />

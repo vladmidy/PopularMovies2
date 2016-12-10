@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ciscoedge.popularmovies.MovieDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+        <LinearLayout
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:materialIcon= "account"
+            app:materialIconColor="#fff"
+            app:materialIconSize="@dimen/review_icon_size"
+            android:scaleType="center"
+            android:background="@android:color/transparent"
+            android:id="@+id/imgReview"/>
+
+         <TextView
+            android:id="@+id/txtAuthor"
+             android:layout_marginBottom="@dimen/Author_Text_bottom_margin"
+            android:layout_marginLeft="@dimen/Author_Text_left_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textStyle="italic"
+            android:text="The author goes here"/>
+
+
+        <TextView
+            android:id="@+id/txtReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small_lorem_ipsum"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/grey_700" />
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ciscoedge.popularmovies.MovieDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            app:materialIcon= "clipboard_arrow_down"
+            app:materialIconColor="#fff"
+            app:materialIconSize="@dimen/material_icon_size"
+            android:scaleType="center"
+            android:background="@android:color/transparent"
+            android:id="@+id/imgVideo"/>
+
+        <TextView
+            android:id="@+id/txtVideo"
+            android:layout_marginLeft="@dimen/video_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small_lorem_ipsum"/>
+
+    </LinearLayout>
+
+</LinearLayout>

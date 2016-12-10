@@ -9,10 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-
-
 public class MovieDetailActivity extends Activity {
-
 
 
     @Override
@@ -43,8 +40,6 @@ public class MovieDetailActivity extends Activity {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, details)
                     .commit();
-
-
         }
         super.onCreate(savedInstanceState);
     }
@@ -56,7 +51,6 @@ public class MovieDetailActivity extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.detail, menu);
         return true;
-
     }
 
 
